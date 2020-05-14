@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main()
+{
+  int n,a,i;
+  float avg,per,sum=0;
+  printf("Enter marks obtained out of 100");
+  for(i=0;i<5;i++)
+  {
+  printf("\nEnter the marks obtained in  course %d : ",i+1);
+  scanf("%d",&a);
+  sum = sum+a;
+  }
+  avg=sum/5;
+  per=(sum/500)*100;
+  printf("Average = %.2f",avg);
+  printf("Percentage = %.2f",per);
+}
